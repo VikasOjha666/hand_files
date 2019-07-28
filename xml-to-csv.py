@@ -29,7 +29,7 @@ def main():
     for directory in ['train','test']:
      image_path = os.path.join('hand_data/', '{}'.format(directory))
      xml_df = xml_to_csv(image_path)
-     xml_df.to_csv('/content/new_files/ {}_labels.csv'.format(directory), index=None)
+     xml_df.to_csv('/content/new_files/{}_labels.csv'.format(directory), index=None)
      print('Successfully converted xml to csv.')
 
 
